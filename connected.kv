@@ -1,0 +1,60 @@
+<Connected>:
+    BoxLayout:
+        orientation: 'vertical'
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: 'background.jpg'
+
+        Label:
+            text: 'Connected'
+            color: 1, 1, 1, 1
+            font_size: '30sp'
+            size_hint_y: None
+            height: dp(100)
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            spacing: 10
+
+            Button:
+                text: 'Person'
+                size_hint_y: None
+                height: dp(50)
+                background_normal: ''
+                background_color: 0, 0.5, 0, 1
+                on_press: root.go_to_class_screen('Person')
+
+            Button:
+                text: 'Student'
+                size_hint_y: None
+                height: dp(50)
+                background_normal: ''
+                background_color: 0, 0.5, 0, 1
+                on_press: root.go_to_class_screen('Student')
+
+            Button:
+                text: 'Professor'
+                size_hint_y: None
+                height: dp(50)
+                background_normal: ''
+                background_color: 0, 0.5, 0, 1
+                on_press: root.go_to_class_screen('Professor')
+
+            Button:
+                text: 'Surveillance'
+                size_hint_y: None
+                height: dp(50)
+                background_normal: ''
+                background_color: 0, 0.5, 0, 1
+                on_press: root.go_to_class_screen('Surveillance')
+
+        Button:
+            text: 'Log Out'
+            size_hint_y: None
+            height: dp(50)
+            background_normal: ''
+            background_color: 0.5, 0.5, 1, 1
+            on_press: root.logout()

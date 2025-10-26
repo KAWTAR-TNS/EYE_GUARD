@@ -1,0 +1,13 @@
+<Surveillance>:
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text: 'Surveillance Screen'
+            size_hint_y: None
+            height: '48dp'
+
+        Camera:
+            id: camera
+            resolution: (640, 480)  # Réglage de la résolution de la caméra
+            play: True  # Lancement automatique de la capture vidéo

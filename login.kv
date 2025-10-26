@@ -1,0 +1,76 @@
+<Login>:
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'background.jpg'  # Path to your background image
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: [10, 50, 10, 50]
+        spacing: 50
+        width: dp(400)  # Set the fixed width of the layout
+
+        AsyncImage:
+            source: 'Eye Guard.png'  # Replace with your image path
+            size_hint_y: None
+            height: dp(150)  # Adjust the height as needed
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None  # Fix the height of the input fields
+            height: dp(100)
+
+            Label:
+                text: 'Login'
+                size_hint_y: None
+                height: dp(30)
+                font_size: 18
+                halign: 'left'
+                text_size: root.width - 20, 20
+                color: 0.3, 0.3, 0.3, 1  # Dark gray text color
+
+            TextInput:
+                id: login
+                multiline: False
+                font_size: 28
+                size_hint_y: None
+                height: dp(40)
+                background_color: 1, 1, 1, 1  # White background color for text input field
+                foreground_color: 0, 0, 0, 1  # Black text color
+                cursor_color: 0, 0, 0, 1  # Black cursor color
+                border: (10, 10, 10, 10)  # Border width for rounded rectangle
+                border_color: 0.8, 0.8, 0.8, 1  # Light gray border color
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Password'
+                size_hint_y: None
+                height: dp(30)
+                halign: 'left'
+                font_size: 18
+                text_size: root.width - 20, 20
+                color: 0.3, 0.3, 0.3, 1  # Dark gray text color
+
+            TextInput:
+                id: password
+                size_hint_y: None
+                height: dp(40)
+                multiline: False
+                password: True
+                font_size: 28
+                background_color: 1, 1, 1, 1  # White background color for text input field
+                foreground_color: 0, 0, 0, 1  # Black text color
+                cursor_color: 0, 0, 0, 1  # Black cursor color
+                border: (10, 10, 10, 10)  # Border width for rounded rectangle
+                border_color: 0.8, 0.8, 0.8, 1  # Light gray border color
+
+        Button:
+            text: 'LOG IN'
+            size_hint_y: None
+            height: dp(40)
+            font_size: 24
+            background_color: 0.25, 0.88, 0.82, 1  # Change to the desired color
+
+            on_press: root.do_login(login.text, password.text)
