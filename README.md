@@ -57,3 +57,7 @@
 - `scikit-learn` - Algorithmes ML
 - `deepface` - Reconnaissance faciale avancée
 - `ultralytics` - Implémentation YOLOv8
+
+## 📄 License
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
