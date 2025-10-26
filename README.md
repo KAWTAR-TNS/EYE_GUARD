@@ -5,11 +5,11 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)
 
-## 📋 Description du Projet
+##  Description du Projet
 
 **EyeGuard** est une application innovante de sécurité intelligente développée pour renforcer la sécurité sur le campus de l'École Marocaine des Sciences de l'Ingénieur (EMSI). Le système utilise la technologie de reconnaissance faciale pour surveiller les entrées/sorties, suivre les mouvements et détecter les comportements suspects en temps réel.
 
-## 🎯 Objectifs Principaux
+##  Objectifs Principaux
 
 - ✅ **Surveillance intelligente** des entrées et sorties du campus
 - ✅ **Identification précise** des étudiants, personnel et visiteurs autorisés
@@ -17,24 +17,24 @@
 - ✅ **Détection proactive** des comportements suspects et intrusions
 - ✅ **Alertes instantanées** aux agents de sécurité
 
-## 🚀 Fonctionnalités
+##  Fonctionnalités
 
-### 🔍 Système de Reconnaissance Faciale
+###  Système de Reconnaissance Faciale
 - Enregistrement sécurisé des visages dans une base de données
 - Identification automatique aux points d'entrée/sortie
 - Historique des passages avec horodatage
 
-### 📍 Suivi des Mouvements
+###  Suivi des Mouvements
 - Surveillance en temps réel des déplacements
 - Détection des mouvements anormaux
 - Zones restreintes monitorées
 
-### ⚠️ Gestion des Alertes
+###  Gestion des Alertes
 - Alertes instantanées pour intrusions
 - Notifications mobiles et emails
 - Tableau de bord de monitoring
 
-### 🖥️ Interface Utilisateur
+###  Interface Utilisateur
 - Tableau de bord convivial pour le personnel de sécurité
 - Visualisation des enregistrements
 - Gestion des alertes et recherches
@@ -57,5 +57,3 @@
 - `scikit-learn` - Algorithmes ML
 - `deepface` - Reconnaissance faciale avancée
 - `ultralytics` - Implémentation YOLOv8
-
-## 📁 Structure du Projet
